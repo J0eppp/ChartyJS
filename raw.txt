@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/J0eppp/ChartyJS/master/Charty.js

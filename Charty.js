@@ -1,4 +1,4 @@
-function Chart(ctx, config) {
+function Charty(ctx, config) {
   // Constructor
   this.ctx = ctx;
   this.config = config;
