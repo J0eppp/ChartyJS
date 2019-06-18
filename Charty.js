@@ -1,7 +1,18 @@
+// ChartyJS 1.0.0
+// Written by Joep van Dijk
+// Github: https://github.com/J0eppp
+//
+//
+//
+//
+//
+
+
 function Charty(ctx, config) {
   // Constructor
   this.ctx = ctx;
   this.config = config;
+
 
   // Setting the (0, 0) coordinate to the left-bottom corner
   this.ctx.canvas.style.transform = "scale(1, -1)";
