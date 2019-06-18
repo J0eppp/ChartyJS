@@ -1,4 +1,4 @@
-// ChartyJS 1.0.0
+// ChartyJS 0.0.0
 // Written by Joep van Dijk
 // Github: https://github.com/J0eppp
 //
@@ -16,6 +16,13 @@ function Charty(ctx, config) {
 
   // Setting the (0, 0) coordinate to the left-bottom corner
   this.ctx.canvas.style.transform = "scale(1, -1)";
+  this.ctx.canvas.style.border = "1px solid #333";
+
+  // Function to draw a dot on the canvas
+  function drawDot(ctx, x, y) {
+    ctx.fillRect(x, y, 5, 5);
+    ctx.stroke();
+  }
 
   // The functions which are going to draw the charts
   var drawLineChart = function() {
@@ -35,10 +42,21 @@ function Charty(ctx, config) {
     }
   };
 
+  var drawPointChart = function() {
+    for (var i = 0; i < this.config.data.length; i++) {
+      var data = this.config.data[i];
+      console.log(data);
+      drawDot(this.ctx, data.x, data.y);
+    }
+  }
+
   // Check for the chart type
   switch (this.config.type.toLowerCase()) {
     case "line":
       drawLineChart();
+      break;
+    case "dot":
+      drawPointChart();
       break;
     default:
       console.error("The given charttype doesn't exist or isn't supported (yet?)!");

@@ -35,3 +35,11 @@ var lineChart = new Charty(ctx, config);
 
 The result will look like this:
 ![example](https://raw.githubusercontent.com/J0eppp/ChartyJS/master/examples/line/PictureOfChart.PNG)
+
+<h3>Dot chart: </h3>
+Documentation coming soon!
+
+
+# Bugs:
+<h1>Things don't fit on the canvas.</h1>
+<p>If your canvas is 600 pixels wide, and you draw a dot with a x value of 600, it won't be visible. This is for all the charts. </p>
