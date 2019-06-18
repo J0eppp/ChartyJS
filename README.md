@@ -9,7 +9,7 @@ A JavaScript library for charts
 You have to create a object, the object needs 2 parameters, "ctx" and "config".
 The ctx is used to draw things on the canvas.
 The config exists out of an array called "data" and a variable called "type", this is de chart type, in this case it's "line".
-So how does that look in JavaScript?
+So how does that look in JavaScript? (This is also done in examples/line/)
 
 ```javascript
 // Get the canvas, for this example I'm using a canvas with a size of 600 by 600 pixels
