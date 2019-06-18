@@ -41,5 +41,5 @@ Documentation coming soon!
 
 
 # Bugs:
-<h1>Things don't fit on the canvas.</h1>
+<h3>Things don't fit on the canvas.</h3>
 <p>If your canvas is 600 pixels wide, and you draw a dot with a x value of 600, it won't be visible. This is for all the charts. </p>
