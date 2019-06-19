@@ -9,9 +9,12 @@ var config = {
     {x: 250, y: 200},
     {x: 500, y: 400},
     {x: 600, y: 300}
-  ]
+  ],
+  settings: {
+    resize: false,
+    lineWidth: 2,
+    dotSize: 8
+  }
 }
 
-window.onload = function() {
-  var chart = new Charty(ctx, config);
-}
+var chart = new Charty(ctx, config);

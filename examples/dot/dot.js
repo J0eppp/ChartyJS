@@ -9,7 +9,10 @@ var config = {
     {x: 300, y: 200},
     {x: 500, y: 400},
     {x: 600, y: 300}
-  ]
+  ],
+  settings: {
+    resize: false
+  }
 }
 
 window.onload = function() {
