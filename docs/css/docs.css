@@ -1,0 +1,15 @@
+html {
+  font-family: monospace;
+}
+
+li.content {
+  margin-left: 18px;
+}
+
+.bugs {
+  padding-left: 10px;
+}
+
+.latestIssue {
+  padding-left: 20px;
+}
